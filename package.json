@@ -3,6 +3,8 @@
   "version": "1.0.2",
   "description": "compiler for vue sfc",
   "main": "src/index.js",
+  "bin": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +18,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/code-frame": "^7.24.7",
     "@vue/compiler-sfc": "^3.0.7",
+    "commander": "^12.1.0",
     "fs-extra": "^9.1.0",
     "hash-sum": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "pkg": "^5.8.1"
   }
 }
